@@ -64,7 +64,7 @@ public class DocumentParser {
 						option.values.add(e.next()
 							.getAsString());
 				}
-				if (temp.has("spigotDoc") && temp.get("spigotDoc")
+				if (temp.has("linkDocs") && temp.get("linkDocs")
 					.isJsonPrimitive()) {
 					option.docLink = temp.getAsJsonPrimitive("spigotDoc")
 						.getAsString();
