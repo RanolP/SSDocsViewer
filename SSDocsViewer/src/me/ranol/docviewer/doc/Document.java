@@ -84,4 +84,8 @@ public class Document {
 	public List<DocOptions> getOptions() {
 		return options;
 	}
+
+	public String getDescription() {
+		return description;
+	}
 }

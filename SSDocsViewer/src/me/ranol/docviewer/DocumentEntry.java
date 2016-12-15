@@ -70,7 +70,7 @@ public class DocumentEntry extends Composite {
 						} catch (Exception ex) {
 							MessageView.error(getShell())
 								.title("오류!")
-								.message("Spigot Doc 링크를 열 수 없습니다.")
+								.message("문서 링크를 열 수 없습니다.")
 								.open();
 						}
 					}
@@ -129,6 +129,7 @@ public class DocumentEntry extends Composite {
 			return;
 		}
 		spellName.setText(doc.getSpellName());
+		spellName.setToolTipText(doc.getSpellName() + "\n" + doc.getDescription());
 		table.setItemCount(doc.getOptions()
 			.size());
 		int idx = 0;
